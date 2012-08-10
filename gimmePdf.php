@@ -1,8 +1,10 @@
 <?php
 	function generatePdf() {
 		$source = "http://kanovsky.sk";
-		$command = "/bin/wkhtmltopdf ".$source." ".__DIR__."/kanovsky.pdf";
 		
+		$wkhtmltopdfPath = '/usr/bin/wkhtmltopdf-amd64';
+		$command = $wkhtmltopdfPath." ".$source." ".__DIR__."/kanovsky.pdf";
+			
 		system($command);		
 	}
 	

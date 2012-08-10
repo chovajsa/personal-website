@@ -55,12 +55,12 @@
                 
                 <div class="bio">
                     <h1>Miroslav Kanovský</h1>
-					<p>programmer & self-learner</p>
+					<p>programmer & linux fan & self-learner</p>
                 </div><!--/bio -->
                 <br class="clearfix" />
                 
                 <div class="contact">
-                    <p> Bratislava, SLovakia <i class="icon-home"></i></p>
+                    <p> Bratislava, Slovakia <i class="icon-home"></i></p>
 				<!--	<p>Anytown, XX 12345 <i class="icon-map-marker"></i></p> -->
 					<p>(+421) (0) 910 904 986 <i class="icon-signal"></i></p>
 					<p>www.kanovsky.sk <i class="icon-globe"></i></p>
@@ -70,8 +70,8 @@
                 
                 <div class="button no-display">
                     <p><a class="btn no-radius btn-resume no-display" href="#" id="print"><i class="icon-print"></i> Print</a> 
-                    <a class="btn no-radius btn-resume no-display" href="javascript:void(location.href='http://www.pdfspot.com/html-to-pdf-converter.aspx?url=' + escape(location.href)+'&pdf_name=' + escape('') + '&pdf_orientation=portrait&pdf_page_size=A4&scripts_enabled=true' )"><i class="icon-download-alt"></i> Download</a> 
-                    <a class="btn no-radius btn-resume no-display" href="#"><i class="icon-list-alt"></i> vCard</a></p>
+                    <a class="btn no-radius btn-resume no-display" href="gimmePdf.php"><i class="icon-download-alt"></i> Download</a> 
+                    <a class="btn no-radius btn-resume no-display" href="vCard.vcf"><i class="icon-list-alt"></i> vCard</a></p>
                 </div> <!--/button -->
                 
 			</div><!--/.well -->
@@ -100,7 +100,7 @@
               <h4><i class="icon-plus"></i> PHP Development</h4>
               <p> 
               	I code websites and web applications using PHP5 + JavaScript + MySQL. In larger projects I include some of
-              	MVC frameworks (Yii, CakePHP) and jQuery. I like Twitter Bbootstrap pretty much and I am fan of webkit and html5.
+              	MVC frameworks (Yii, CakePHP) and jQuery. I like Twitter Bootstrap pretty much and I am fan of webkit and html5.
                </p>
             </div><!--/span-->
             <div class="span8">
@@ -110,7 +110,7 @@
               </p>
             </div><!--/span-->
 			<div class="span8">
-              <h4><i class="icon-plus"></i> Playing with Linux </h4>
+              <h4><i class="icon-plus"></i> Linux exploration </h4>
               <p> I learn Python and Bash shell scripting, I can do basic web-server administration as well</p>
             </div><!--/span-->
           </div><!--/row-->
@@ -196,25 +196,7 @@
           
           
           
-		  <div class="header">
-			<h2>Education</h2>
-			<hr />
-		  </div>
 		  
-		   <div class="row">
-            <div class="span8">
-              <h4><i class="icon-plus"></i> University of Economics</h4>
-              <p> 
-              	Business & Finance managemet in Bratislava. 3 years completed with bachelor's degree 
-               </p>
-            </div><!--/span-->
-            <div class="span8">
-              <h4><i class="icon-plus"></i> High school of mechanical engeneering </h4>
-              <p>
-              		Technical and information services. 4 years study.
-              </p>
-            </div><!--/span-->
-          </div><!--/row-->
 		 
 		  <div class="header">
 			<h2>Work Experience.</h2>
@@ -260,7 +242,14 @@
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.js"></script>
     
-
+	<script type="text/javascript">
+		$(document).ready(function(){    
+			$('#print').click(function(){
+				window.print();
+			});
+		});
+	</script>
+	
   </body>
 </html>
 
